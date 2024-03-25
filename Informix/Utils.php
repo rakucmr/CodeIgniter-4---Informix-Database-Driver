@@ -53,14 +53,14 @@ class Utils extends BaseUtils
 	 *
 	 * @var string
 	 */
-	protected $listDatabases = 'SHOW DATABASES';
+	protected $listDatabases = 'SELECT name FROM sysmaster:sysdatabases';
 
 	/**
 	 * OPTIMIZE TABLE statement
 	 *
 	 * @var string
 	 */
-	protected $optimizeTable = 'OPTIMIZE TABLE %s';
+	protected $optimizeTable = 'UPDATE STATISTICS FOR TABLE %s';
 
 	//--------------------------------------------------------------------
 
